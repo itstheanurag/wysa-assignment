@@ -1,0 +1,53 @@
+
+
+
+
+# approach 1
+
+get all the data from req.body (from frontend) to mongoDb and then process that data 
+
+route.post('/userDetails',-------
+
+
+successfull response 
+
+{
+    "nickName": "Disco",
+    "questions": {
+        "struggleTime": "9 weeks",
+        "bedTime": 2,
+        "wakeUpTime": 19,
+        "sleepHours": 5
+    },
+    "_id": "62ee143dfd5992043e61b25a",
+    "__v": 0
+}
+
+
+
+# approach 2 
+
+post-->put-->put -->put 
+
+post data nickName 
+then put all the question on null 
+
+then update one by one by endPoints
+
+
+route.post('/nickName,---)
+
+router.put('/struggleTime',----)
+
+router.put('bedTime',-----)
+
+router.put('/sleepHours',--------)
+
+they all are linked with the same uniqueID ("62ee03602acc2e9092a50245")
+send again and again from diff endpoints Via Header token or simple body Token
+
+
+
+
+
+

@@ -9,10 +9,11 @@ const userSchema = new mongoose.Schema({
     },
 
     questions:{
+        type:Object,
 
 
         struggleTime:{
-            type:String,
+            type:String,  // < 2 weeks    2--8 weeks   8 weeks >
             required:true,
             default:null
 
@@ -21,7 +22,7 @@ const userSchema = new mongoose.Schema({
 
         bedTime:{
 
-            type:String,
+            type:Number, // 24 hours system 
             required:true,
             default:null
             
@@ -30,20 +31,24 @@ const userSchema = new mongoose.Schema({
 
         wakeUpTime:{
 
-            type:String,
+            type:Number,
             required:true,
             default:null
 
         },
-        sleepHours:{
+        sleepHours:{  // ideally 1-10 
 
-            type:String,
+            type:Number,
             required:true,
             default:null
 
         }
 
     }
+
+
+    // can add more fileds as per the requirement 
+
 
 },{timeStamps:true})
 
