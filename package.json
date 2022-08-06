@@ -1,0 +1,16 @@
+{
+  "name": "wysa",
+  "version": "1.0.0",
+  "description": "this is mini backend proje",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "chandan gupta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "it": "^1.1.1",
+    "mongoose": "^6.5.1"
+  }
+}
