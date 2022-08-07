@@ -25,7 +25,7 @@ successfull response
 
 
 
-# approach 2 
+# approach 2   (switch to step by step branch ) 
 
 post-->put-->put -->put 
 
@@ -48,6 +48,36 @@ send again and again from diff endpoints Via Header token or simple body Token
 
 
 
+2) verifying user is in middleWare section 
+
+
+
+1)  {
+    "nickName": "divine",
+    "questions": {
+        "struggleTime": null,
+        "bedTime": null,
+        "wakeUpTime": null,
+        "sleepHours": null
+    },
+    "_id": "62ee7d3722bbeac27d8c30cf",
+    "__v": 0
+}
+
+
+after 4 updates 
+
+{
+    "_id": "62ee86c2f0f8664bde3265b8",
+    "nickName": "divine",
+    "questions": {
+        "struggleTime": "2 weeks",
+        "bedTime": "10",
+        "wakeUpTime": "6",
+        "sleepHours": "6"
+    },
+    "__v": 0
+}
 
 
 
