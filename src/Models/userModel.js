@@ -44,6 +44,11 @@ const userSchema = new mongoose.Schema({
 
         }
 
+    },
+
+    isDelted:{
+        type:Boolean,
+        default:false
     }
 
 
